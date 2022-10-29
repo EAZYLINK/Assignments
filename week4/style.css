@@ -1,0 +1,138 @@
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0px;
+}
+
+html, body{
+min-height: 100vh;
+max-height: 100vh;
+}
+
+nav {
+  display: flex;
+  background-color: #004241;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin: 0px 30px 0px 30px;
+  text-align: center;
+}
+
+nav a{
+  flex-basis: 100%;
+  color: white;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  min-height: 300px;
+  padding: 100px;
+  margin: 5px 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+/* set the flex to occupy 100% of the width */
+.container> * {
+  flex-basis: 100%;
+}
+.box1, .box2, .box3 {
+  padding: 70px;
+  position: relative;
+  height: 80vh;
+}
+.box1 {
+  flex-basis: auto;
+  flex-grow: 1;
+  background-color: hsl(31, 77%, 52%);
+  align-content: center;
+  align-items: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.box2 {
+  flex-basis: auto;
+  flex-grow: 1;
+  background-color: hsl(184, 100%, 22%);
+}
+.box3 {
+  flex-basis: auto;
+  flex-grow: 1;
+  background-color: hsl(179, 100%, 13%);
+border-radius: 0px 10px 10px 0px;
+}
+
+h1{
+ color: hsl(0, 0%, 95%);
+font-size: 20px;
+font-weight: 700px;
+font-family:Big Shoulders Display;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 20px;
+}
+.b1, .b2, .b3 {
+  position: absolute;
+  background: hsl(0, 0%, 95%);
+  border-radius: 10px;
+  border-color: hsl(0, 0%, 95%);
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+ margin-bottom: 50px;
+}
+.b1:hover{
+  background-color: transparent;
+  color: white;
+}
+.b2:hover{
+  background-color: transparent;
+  color: white;
+}
+.b3:hover{
+  background-color: transparent;
+  color: white;
+}
+
+.b1 {
+  color: hsl(31, 77%, 52%);
+  padding: 5px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.b2 {
+  color: hsl(184, 100%, 22%);
+  padding: 5px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.b3 {
+  color: hsl(179, 100%, 13%);
+  padding: 5px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 375px)
+{
+  .container{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1440px)
+{
+  .container{
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+}
