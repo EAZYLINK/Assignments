@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0px;
+}
+
+html, body{
+position: relative;
+width: 1440px;
+height: 1024px;
+background: #0D0C26;
+}
+
+nav {
+  display: flex;
+  background-color: transparent;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin: 0px 30px 0px 30px;
+  text-align: center;
+}
+
+nav a{
+  flex-basis: 100%;
+  color: white;
+  text-decoration: none;
+}
+.container {
+  display: grid;
+  grid-template-areas: 'cell1 cell1 cell1 cell2' 'cell1 cell1 cell1 cell2' 'cell3 cell3 cell4 cell4' 'cell3 cell3 cell5 cell5';
+position: absolute;
+width: 665px;
+height: 440px;
+left: 200px;
+top: 238px;
+}
+
+.cell1 {
+  grid-area: cell1;
+  background-color: #e72e0d;
+position: absolute;
+width: 480px;
+height: 200px;
+}
+.cell2 {
+  grid-area: cell2;
+  background-color: #faab00;
+position: absolute;
+width: 218.95px;
+height: 200px;
+}
+
+
+.cell3 {
+  grid-area: cell3;
+  background-color: #097c09;
+position: absolute;
+width: 310px;
+height: 260px;
+}
+
+.cell4 {
+  grid-area: cell4;
+  background-color: #0f87ff;
+position: absolute;
+width: 397px;
+height: 95px;
+}
+
+.cell5 {
+  grid-area: cell5;
+  background-color: #0f87ff;
+position: absolute;
+width: 397px;
+height: 152.3px;
+}
